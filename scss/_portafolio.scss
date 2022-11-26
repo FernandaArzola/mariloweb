@@ -1,0 +1,35 @@
+.container-2{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+#portafolio{
+    padding: 90px 0;
+    background: #f8f9fa;
+}
+#portafolio h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+#portafolio h6{
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.portafolio-row{
+    display: flex;
+}
+.portafolio-row-box{
+    margin: 15.9px;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.portafolio-row-box p{
+    text-align: center;
+    font-family: "poppins";
+    font-weight: 400;
+    padding: 20px;
+    margin-top: 0;
+}

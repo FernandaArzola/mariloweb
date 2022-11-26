@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@200;300;400;500;700;800&display=swap');
+@import "navbar";
+@import "footer";
+@import "portafolio";
+@import "servicios";
+@import "contacto";
+
+$font-stack: "Montserrat", sans-serif;
+$primary-color: #bfd068;
+$secondary-color: #f97b4e;
+$tertiary-color: #2a5ddf;
+$background-color: #fdfcfc; 
+$text-color: #1f1e1f;
+//RESET
+
+h1{ font-size: 3rem;}
+h2{ font-size: 2.8rem;}
+h1{ font-size: 1.5rem;}
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+//utility classes
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.display-1{
+    font-size: 5.5rem;
+    font-family: "Poppins";
+    font-weight: 900;
+}
+.btn-1{
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-family: "Montserrat";
+}
+.btn-dark{
+    background: $secondary-color;
+    border: none;
+    color: $background-color;
+}
+.btn-outline{
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+}
+#showcase{
+    height: 100vh;
+    background: $background-color;
+    padding: 100px 0;
+}
+#showcase h1{
+    line-height: 1.2em;
+    text-decoration: underline $text-color;
+}
+#showcase .title-outline{
+    color: #fff;
+    -webkit-text-stroke: 2px $text-color;
+}
+.showcase-row{
+    display: flex;
+}
+.showcase-row-title{
+    padding-top: 0
+    px;
+}
+.showcase-row-image{
+    display: block;
+    margin: 0 auto;
+}
+.showcase-row-image img{
+    height: 500px;
+}
+p{
+    font-family: "Montserrat" ;
+    font-weight: 600 ;
+    color: $secondary-color;
+}
+//servicios
+#features{
+    padding: 40px 0;
+    h2{
+        line-height: 1.2em;
+        font-weight: 200;
+        padding-bottom: 30px;
+        font-family: "Anton";
+        color: $tertiary-color;
+    }
+    h4{
+        font-family: "Montserrat";
+        font-size: 24px;
+        color: $secondary-color;
+    }
+    p{
+        font-family: "Montserrat";
+        font-size: 15px;
+        color: $text-color;
+        font-weight: 400;
+    }
+    .features-row{
+        display: flex;
+        padding-bottom: 40px;
+    }
+}
+/* ABOUT US */
+.display-2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 80px;
+    color: $background-color;
+    font-family: "Anton";
+}
+#about{
+    background: $text-color;
+    padding: 80px 80px;
+}
+.showcase-flex{
+    display: flex;
+}
+.showcase-flex h3,
+.showcase-flex p{
+    flex: 1;
+}
+.showcase-flex p{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: $background-color;
+    font-size: 14.5px;
+}
+.container-2{
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    height: 43vh;
+    padding: 40px;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 655px;
+    font-family: "Montserrat";
+}
+.btn a{
+    position: relative;
+    display: flex;
+    height: 70px;
+    width: 240px;
+    background: linear-gradient(115deg, #bfd068, #827bb1, #bfd068, #f8f9fa, #827bb1, #bfd068 );
+    text-align: center;
+    border-radius: 10px;
+}
+.btn a span{
+    height: 88%;
+    width: 96%;
+    background: #1F1E1F;
+    /*display: block;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    line-height: 62px;
+    color: #f8f9fa;
+    font-size: 15px;
+    text-align: center;
+}
+.btn a:hover{
+    animation: animate 0.4s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(-360deg);
+    }
+}
+@media (max-width:600px) {
+    .showcase-flex h3{
+        padding: 1px 0;
+        text-align:center;
+    }
+    .showcase-flex{
+        flex-direction: column;
+    }
+    .showcase-flex p{
+        padding: 10px 0;
+        text-align: justify;
+    }
+    .display-1{
+        font-size: 4rem;
+    }
+    .navbar-home{
+        height: 10%;
+        padding: 20px 0 10px 0;
+    }
+    #navbar .logo{
+        float: none;
+        align-items: center;
+    }
+    #showcase{
+        height: 100%;
+        padding: 30px 0 20px 0;
+    }
+    .showcase-row{
+        flex-wrap: wrap;
+    }
+    .showcase-row-image img{
+        height: 266px;
+    }
+    .showcase-row-title{
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .btn{
+        margin-top: 20px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    #portafolio{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .portafolio-row{
+        flex-wrap: wrap;
+    }
+    .contact__title{
+        font-size: 40px;
+    }
+    .contact__image-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    .container-2{
+        align-content: center;
+        justify-content: center;
+        display: grid;
+        height: 60vh;
+        padding: 20px;
+    }
+    #about{
+        background: $text-color;
+        padding: 60px 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px){
+    .container-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 992px){
+    .container-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

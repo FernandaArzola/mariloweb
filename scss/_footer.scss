@@ -1,0 +1,55 @@
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: #1F1E1F;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon ul, footer .menu li{
+    list-style: none;
+    font-family: "Montserrat";
+}
+footer .social_icon i{
+    font-size: 17px;
+    color: #f8f9fa;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon i:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 14px;
+    color: #f8f9fa;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: #bfd068;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
